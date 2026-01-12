@@ -12,10 +12,21 @@ public class AlertSender {
         System.out.println("Alerta enviada a 112:");
         System.out.println(event);
 
+        mostrarAlertaFormateada(event);
+
         try (FileWriter writer = new FileWriter("alertas.txt", true)) {
             writer.write(event.toString() + "\n");
         } catch (Exception e) {
             System.err.println("Error al guardar la alerta: " + e.getMessage());
         }
     }
+
+private void mostrarAlertaFormateada(EmergencyEvent event) {
+    System.out.println("===== ALERTA DE EMERGENCIA =====");
+    System.out.println(event.toString());
+    System.out.println("================================");
 }
+
+}
+
+
