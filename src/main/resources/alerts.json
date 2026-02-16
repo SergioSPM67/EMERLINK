@@ -1,0 +1,20 @@
+[
+  {
+    "type": "Fire",
+    "location": "Building A",
+    "priority": "High",
+    "description": "Fire on the third floor"
+  },
+  {
+    "type": "Medical",
+    "location": "Building B",
+    "priority": "Medium",
+    "description": "Person fainted in the lobby"
+  }
+]
+
+
+
+
+
+
