@@ -11,7 +11,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class EmergencyManager {
-    // Lista para guardar los centros cargados del JSON
     private List<CentroSalud> centrosDeSalud = new ArrayList<>();
 
     public void startSystem() {
@@ -47,9 +46,9 @@ public class EmergencyManager {
             ObjectMapper mapper = new ObjectMapper();
             CentroSalud[] datos = mapper.readValue(new File("CentrosDeSalud.json"), CentroSalud[].class);
             this.centrosDeSalud = Arrays.asList(datos);
-            System.out.println(">>> [JSON] " + centrosDeSalud.size() + " centros de salud cargados.");
+            System.out.println(+ centrosDeSalud.size() + " centros de salud cargados.");
         } catch (Exception e) {
-            System.err.println(">>> [ERROR] No se pudo cargar el JSON: " + e.getMessage());
+            System.err.println("No se pudo cargar el JSON: " + e.getMessage());
         }
     }
 }

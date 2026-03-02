@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edd1fd03-321f-4d81-a4e8-def9dcf70196" name="Changes" comment="Nueva funcionalidad centros de salud">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/emergencias/model/CentroSalud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emergencias/model/CentroSalud.java" afterDir="false" />
+    <list default="true" id="edd1fd03-321f-4d81-a4e8-def9dcf70196" name="Changes" comment="Warnings corregidos">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/emergencias/controller/EmergencyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emergencias/controller/EmergencyManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,12 +110,21 @@
       <option name="project" value="LOCAL" />
       <updated>1772475905036</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Warnings corregidos">
+      <option name="closed" value="true" />
+      <created>1772476028515</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1772476028515</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Nueva funcionalidad centros de salud" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nueva funcionalidad centros de salud" />
+    <MESSAGE value="Warnings corregidos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Warnings corregidos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
