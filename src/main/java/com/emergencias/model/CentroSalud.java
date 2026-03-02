@@ -28,6 +28,11 @@ public class CentroSalud {
     public String getMunicipio() { return municipio; }
     public String getTelefono() { return telefono; }
 
+    public void setNombre(String nombre) { this.nombre = nombre; }
+    public void setDireccion(String direccion) { this.direccion = direccion; }
+    public void setMunicipio(String municipio) { this.municipio = municipio; }
+    public void setTelefono(String telefono) { this.telefono = telefono; }
+
     @Override
     public String toString() {
         return "Centro: " + nombre + " | Municipio: " + municipio + " | Tlf: " + telefono;
