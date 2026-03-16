@@ -1,0 +1,68 @@
+[16/03/2026 20:44:58] Alerta: Accidente en Elche
+==================================================
+FECHA: 16/03/2026 20:47:29
+USUARIO: Sergio Pascual Molina
+EVENTO: e en Alicante
+==================================================
+
+==================================================
+   INFORME DE EMERGENCIA - SISTEMA EMERLINK
+==================================================
+ID EVENTO   : E1773690615
+FECHA/HORA  : 16/03/2026 20:50:15
+ESTADO      : ALERTA ENVIADA CON ÉXITO
+--------------------------------------------------
+DATOS DEL TITULAR:
+ > Nombre   : Sergio Pascual Molina
+ > Contacto : 123456789
+--------------------------------------------------
+DETALLES DEL INCIDENTE:
+ > Descripción: Accidente en Alicante
+ > Destino    : 112 Emergencias Sanitarias
+==================================================
+
+==================================================
+   INFORME DE EMERGENCIA - SISTEMA EMERLINK
+==================================================
+ID EVENTO   : E1773690840
+FECHA/HORA  : 16/03/2026 20:54:00
+ESTADO      : ALERTA ENVIADA CON ÉXITO
+--------------------------------------------------
+DATOS DEL TITULAR:
+ > Nombre   : Sergio Pascual Molina
+ > Contacto : 112212121
+--------------------------------------------------
+DETALLES DEL INCIDENTE:
+ > Descripción: Caida en Elche
+==================================================
+
+==================================================
+   INFORME DE EMERGENCIA - SISTEMA EMERLINK
+==================================================
+ID EVENTO   : E1773691001
+FECHA/HORA  : 16/03/2026 20:56:41
+ESTADO      : ALERTA ENVIADA CON ÉXITO
+--------------------------------------------------
+DATOS DEL TITULAR:
+ > Nombre   : Sergio Pascual Molina
+ > Contacto : 123456789
+--------------------------------------------------
+DETALLES DEL INCIDENTE:
+ > Descripción: Caida en Elche
+==================================================
+
+==================================================
+   INFORME DE EMERGENCIA - SISTEMA EMERLINK
+==================================================
+ID EVENTO   : E1773691136
+FECHA/HORA  : 16/03/2026 20:58:56
+ESTADO      : ALERTA ENVIADA CON ÉXITO
+--------------------------------------------------
+DATOS DEL TITULAR:
+ > Nombre   : sERGIO 
+ > Contacto : 1234546789
+--------------------------------------------------
+DETALLES DEL INCIDENTE:
+ > Descripción: Fuego en Elche
+==================================================
+
