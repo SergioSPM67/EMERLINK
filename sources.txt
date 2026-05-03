@@ -1,0 +1,6 @@
+C:\Users\sergi\OneDrive\Documentos\EMERLINK\src\main\java\com\emergencias\alerta\AlertSender.java
+C:\Users\sergi\OneDrive\Documentos\EMERLINK\src\main\java\com\emergencias\controller\EmergencyManager.java
+C:\Users\sergi\OneDrive\Documentos\EMERLINK\src\main\java\com\emergencias\detector\EmergencyDetector.java
+C:\Users\sergi\OneDrive\Documentos\EMERLINK\src\main\java\com\emergencias\main\Main.java
+C:\Users\sergi\OneDrive\Documentos\EMERLINK\src\main\java\com\emergencias\modelo\EmergencyEvent.java
+C:\Users\sergi\OneDrive\Documentos\EMERLINK\src\main\java\com\emergencias\modelo\UserData.java
