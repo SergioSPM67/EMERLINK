@@ -1,0 +1,57 @@
+
+
+
+==================================================
+    INFORME DE EMERGENCIA - SISTEMA EMERLINK
+==================================================
+ID EVENTO   : E1780041594
+FECHA/HORA  : 29/05/2026 09:59:54
+ESTADO      : ALERTA ENVIADA CON ÉXITO
+--------------------------------------------------
+DATOS DEL PACIENTE (FICHA MÉDICA):
+ > Nombre       : Sergio Pascual
+ > Teléfono     : 662921489
+ > Alergias     : Ibuprofeno
+ > Tipo Sangre  : 0 negativo
+ > Obs. Crónicas: Ninguna
+--------------------------------------------------
+DETALLES DEL INCIDENTE:
+ > Descripción: Alerta manual desde Botón de Pánico
+==================================================
+
+==================================================
+    INFORME DE EMERGENCIA - SISTEMA EMERLINK
+==================================================
+ID EVENTO   : E1780047732
+FECHA/HORA  : 29/05/2026 11:42:12
+ESTADO      : ALERTA ENVIADA CON ÉXITO
+--------------------------------------------------
+DATOS DEL PACIENTE (FICHA MÉDICA):
+ > Nombre       : Sergio Pascual Molina
+ > Teléfono     : 662921489
+ > Alergias     : nada
+ > Tipo Sangre  : 0 positivo
+ > Obs. Crónicas: celiaco
+--------------------------------------------------
+DETALLES DEL INCIDENTE:
+ > Descripción: Alerta manual desde Botón de Pánico
+==================================================
+
+==================================================
+    INFORME DE EMERGENCIA - SISTEMA EMERLINK
+==================================================
+ID EVENTO   : E1780048015
+FECHA/HORA  : 29/05/2026 11:46:55
+ESTADO      : ALERTA ENVIADA CON ÉXITO
+--------------------------------------------------
+DATOS DEL PACIENTE (FICHA MÉDICA):
+ > Nombre       : Carlos
+ > Teléfono     : 123456789
+ > Alergias     : nada
+ > Tipo Sangre  : 0 negativo
+ > Obs. Crónicas: celiaco
+--------------------------------------------------
+DETALLES DEL INCIDENTE:
+ > Descripción: Alerta manual desde Botón de Pánico
+==================================================
+

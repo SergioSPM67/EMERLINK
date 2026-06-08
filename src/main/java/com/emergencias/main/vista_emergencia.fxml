@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.ScrollPane?>
+
+<StackPane prefHeight="650.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.emergencias.controller.EmergencyManager" style="-fx-background-color: #F8F9FA;">
+   <children>
+
+      <VBox fx:id="pantallaInicio" spacing="0.0">
+         <children>
+            <VBox alignment="CENTER_LEFT" style="-fx-background-color: #C62828; -fx-padding: 15 20 15 20;">
+               <children>
+                  <Label text="Inicio" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: white;" />
+               </children>
+            </VBox>
+
+            <ScrollPane fitToWidth="true" style="-fx-background-color: transparent; -fx-background-insets: 0; -fx-padding: 0;" VBox.vgrow="ALWAYS">
+               <content>
+                  <VBox spacing="25.0" style="-fx-padding: 20; -fx-background-color: #F8F9FA;">
+                     <children>
+                        <VBox alignment="CENTER" spacing="2">
+                           <children>
+                              <Label text="EMERLINK" style="-fx-font-size: 32px; -fx-font-weight: 900; -fx-text-fill: #C62828; -fx-letter-spacing: 2px;" />
+                              <Label text="Gestión de Emergencias Sanitarias" style="-fx-font-size: 14px; -fx-text-fill: #757575;" />
+                           </children>
+                        </VBox>
+
+                        <VBox fx:id="panelMensaje" alignment="CENTER" managed="false" visible="false" style="-fx-background-color: #FFEBEE; -fx-border-color: #FFCDD2; -fx-border-radius: 10; -fx-background-radius: 10; -fx-padding: 10;">
+                           <children>
+                              <Label fx:id="lblMensajeError" text="Error" wrapText="true" style="-fx-text-fill: #C62828; -fx-font-weight: bold; -fx-font-size: 13px;" />
+                           </children>
+                        </VBox>
+
+                        <VBox alignment="CENTER" style="-fx-background-color: #C62828; -fx-background-radius: 25; -fx-padding: 35 20; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.15), 10, 0, 0, 4);">
+                           <children>
+                              <Label text="⚠" style="-fx-font-size: 48px; -fx-text-fill: white; -fx-font-weight: bold;" />
+                              <Label fx:id="lblTituloAlerta" text="ALERTA DE EMERGENCIA" style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: white;" />
+                              <Label fx:id="lblContador" text="Toca para enviar alerta" style="-fx-font-size: 14px; -fx-text-fill: #FFCDD2; -fx-padding: 5 0 15 0;" />
+
+                              <HBox alignment="CENTER" spacing="10">
+                                 <children>
+                                    <Button fx:id="btnAlerta" mnemonicParsing="false" onAction="#handleActionAlerta" text="ACTIVAR" style="-fx-background-color: white; -fx-text-fill: #C62828; -fx-font-weight: bold; -fx-font-size: 14px; -fx-padding: 10 25; -fx-background-radius: 15; -fx-cursor: hand;" />
+                                    <Button fx:id="btnCancelarAlerta" visible="false" managed="false" mnemonicParsing="false" onAction="#handleCancelarAlerta" text="CANCELAR" style="-fx-background-color: #212121; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px; -fx-padding: 10 25; -fx-background-radius: 15; -fx-cursor: hand;" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+
+                        <VBox spacing="10.0">
+                           <children>
+                              <Label text="Acceso Rápido" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #212121;" />
+
+                              <Button mnemonicParsing="false" onAction="#handleVerGuia" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 15; -fx-alignment: CENTER_LEFT; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 5, 0, 0, 2); -fx-cursor: hand;" maxWidth="Infinity">
+                                 <graphic>
+                                    <HBox spacing="15.0" alignment="CENTER_LEFT">
+                                       <children>
+                                          <Label text="📖" style="-fx-font-size: 24px; -fx-text-fill: #C62828;" />
+                                          <VBox alignment="CENTER_LEFT">
+                                             <children>
+                                                <Label text="Guía de Primeros Auxilios" style="-fx-font-weight: bold; -fx-font-size: 15px; -fx-text-fill: #212121;" />
+                                                <Label text="Instrucciones paso a paso" style="-fx-font-size: 13px; -fx-text-fill: #757575;" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+
+            <HBox alignment="CENTER" style="-fx-background-color: white; -fx-border-color: #E0E0E0; -fx-border-width: 1 0 0 0; -fx-padding: 8 0;">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleIrAInicio" text="🏠&#10;Inicio" style="-fx-background-color: transparent; -fx-text-fill: #C62828; -fx-font-size: 11px; -fx-alignment: center;" maxWidth="Infinity" HBox.hgrow="ALWAYS" />
+                  <Button mnemonicParsing="false" onAction="#handleMockClick" text="🗺&#10;Mapa" style="-fx-background-color: transparent; -fx-text-fill: #757575; -fx-font-size: 11px; -fx-alignment: center;" maxWidth="Infinity" HBox.hgrow="ALWAYS" />
+                  <Button mnemonicParsing="false" onAction="#handleVerFicha" text="📋&#10;Ficha Médica" style="-fx-background-color: transparent; -fx-text-fill: #757575; -fx-font-size: 11px; -fx-alignment: center;" maxWidth="Infinity" HBox.hgrow="ALWAYS" />
+                  <Button mnemonicParsing="false" onAction="#handleMockClick" text="⚙&#10;Ajustes" style="-fx-background-color: transparent; -fx-text-fill: #757575; -fx-font-size: 11px; -fx-alignment: center;" maxWidth="Infinity" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+
+      <VBox fx:id="pantallaGuia" spacing="0.0" visible="false" managed="false" style="-fx-background-color: #F8F9FA;">
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-background-color: #C62828; -fx-padding: 15 20;">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleIrAInicio" text="⬅" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-cursor: hand;" />
+                  <Label text="Primeros Auxilios" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: white;" />
+               </children>
+            </HBox>
+            <ScrollPane fitToWidth="true" style="-fx-background-color: transparent; -fx-background-insets: 0;" VBox.vgrow="ALWAYS">
+               <content>
+                  <VBox spacing="15.0" style="-fx-padding: 20;">
+                     <children>
+                        <VBox style="-fx-background-color: white; -fx-background-radius: 12; -fx-padding: 15; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 5, 0, 0, 2);">
+                           <children>
+                              <Label text="🔥 Quemaduras" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #E65100; -fx-padding: 0 0 5 0;" />
+                              <Label text="1. Enfríe la quemadura inmediatamente con agua corriente fría durante 10 a 20 minutos.&#10;2. No use hielo ni pasta de dientes.&#10;3. Cubra flojamente con una gasa estéril." wrapText="true" style="-fx-text-fill: #424242; -fx-font-size: 13px; -fx-line-spacing: 3;" />
+                           </children>
+                        </VBox>
+                        <VBox style="-fx-background-color: white; -fx-background-radius: 12; -fx-padding: 15; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 5, 0, 0, 2);">
+                           <children>
+                              <Label text="🩹 Cortes y Hemorragias" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #C62828; -fx-padding: 0 0 5 0;" />
+                              <Label text="1. Presione directamente sobre la herida con un paño limpio.&#10;2. Mantenga la presión constante durante 5 minutos.&#10;3. Eleve la extremidad afectada." wrapText="true" style="-fx-text-fill: #424242; -fx-font-size: 13px; -fx-line-spacing: 3;" />
+                           </children>
+                        </VBox>
+                        <VBox style="-fx-background-color: white; -fx-background-radius: 12; -fx-padding: 15; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 5, 0, 0, 2);">
+                           <children>
+                              <Label text="🧠 Ictus" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #311B92; -fx-padding: 0 0 5 0;" />
+                              <Label text="Utilice la regla F.A.S.T.:&#10;1. Cara torcida.&#10;2. Dificultad para levantar los brazos.&#10;3. Problemas en el habla.&#10;4. Tiempo: actúe rápido." wrapText="true" style="-fx-text-fill: #424242; -fx-font-size: 13px; -fx-line-spacing: 3;" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+
+      <VBox fx:id="pantallaFicha" spacing="0.0" visible="false" managed="false" style="-fx-background-color: #F8F9FA;">
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-background-color: #C62828; -fx-padding: 15 20;">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleIrAInicio" text="⬅" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-cursor: hand;" />
+                  <Label text="Configurar Ficha Médica" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: white;" />
+               </children>
+            </HBox>
+
+            <ScrollPane fitToWidth="true" style="-fx-background-color: transparent; -fx-background-insets: 0;" VBox.vgrow="ALWAYS">
+               <content>
+                  <VBox spacing="15.0" style="-fx-padding: 20;">
+                     <children>
+                        <Label text="Datos del Titular" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #212121;" />
+
+                        <VBox spacing="5.0">
+                           <Label text="Nombre Completo:" style="-fx-text-fill: #616161; -fx-font-size: 12px;" />
+                           <TextField fx:id="txtFichaNombre" promptText="Ej: Adrián Pascual" style="-fx-background-radius: 8; -fx-padding: 8;" />
+                        </VBox>
+
+                        <VBox spacing="5.0">
+                           <Label text="Teléfono de Contacto (Emergencias):" style="-fx-text-fill: #616161; -fx-font-size: 12px;" />
+                           <TextField fx:id="txtFichaTelefono" promptText="Ej: 600123456" style="-fx-background-radius: 8; -fx-padding: 8;" />
+                        </VBox>
+
+                        <Label text="Información Médica Crucial" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #212121; -fx-padding: 10 0 0 0;" />
+
+                        <VBox spacing="5.0">
+                           <Label text="Alergias o Medicamentos:" style="-fx-text-fill: #616161; -fx-font-size: 12px;" />
+                           <TextField fx:id="txtFichaAlergias" promptText="Ej: Penicilina, Ibuprofeno" style="-fx-background-radius: 8; -fx-padding: 8;" />
+                        </VBox>
+
+                        <VBox spacing="5.0">
+                           <Label text="Grupo Sanguíneo:" style="-fx-text-fill: #616161; -fx-font-size: 12px;" />
+                           <TextField fx:id="txtFichaSangre" promptText="Ej: AB Positivo (AB+)" style="-fx-background-radius: 8; -fx-padding: 8;" />
+                        </VBox>
+
+                        <VBox spacing="5.0">
+                           <Label text="Enfermedades Crónicas o Notas:" style="-fx-text-fill: #616161; -fx-font-size: 12px;" />
+                           <TextArea fx:id="txtFichaNotas" prefHeight="80.0" promptText="Ej: Hipertensión arterial / Diabetes tipo 2" style="-fx-background-radius: 8;" wrapText="true" />
+                        </VBox>
+
+                        <Button mnemonicParsing="false" onAction="#handleGuardarFicha" text="GUARDAR DATOS MÉDICOS" maxWidth="Infinity" style="-fx-background-color: #2E7D32; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 12; -fx-background-radius: 10; -fx-cursor: hand;" />
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+
+   </children>
+</StackPane>
